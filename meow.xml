@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="exec" class="java.lang.ProcessBuilder" init-method="start">
+        <constructor-arg>
+            <list>
+                <value>/usr/local/bin/score</value>
+                <value>4ddab8a7-274f-4096-879a-df279bb1334c</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+</beans>
